@@ -1,0 +1,83 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* BACKGROUND ONLY - NO SCROLLBAR WITHOUT CONTENT */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents scroll on html/body */
+}
+
+body {
+  background-color: #121212;  /* Rich matte black background */
+  height: 100%; /* Use height instead of min-height */
+  width: 100%;
+  position: relative;
+}
+
+/* Dotted background pattern */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  background-image: radial-gradient(circle, #2a2a2a 1.2px, transparent 1.2px);
+  background-size: 32px 32px;
+}
+
+/* Root container */
+#root {
+  height: 100%; /* Use height instead of min-height */
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+  overflow-y: auto; /* ONLY scroll if content overflows */
+}
+
+/* App container */
+.app {
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive - dot size only */
+@media (max-width: 1024px) {
+  body::before { background-size: 28px 28px; }
+}
+
+@media (max-width: 768px) {
+  body::before { background-size: 24px 24px; }
+}
+
+@media (max-width: 480px) {
+  body::before { background-size: 20px 20px; }
+}
+
+@media (max-width: 896px) and (orientation: landscape) {
+  body::before { background-size: 22px 22px; }
+}
+
+@media (min-width: 1920px) {
+  body::before {
+    background-size: 36px 36px;
+    background-image: radial-gradient(circle, #2a2a2a 1.5px, transparent 1.5px);
+  }
+}
