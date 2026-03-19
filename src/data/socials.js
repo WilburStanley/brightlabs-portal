@@ -8,6 +8,14 @@ export const socials = [
     description: 'Software Tools and Books'
   },
   {
+    id: 'website',
+    name: 'Official Website',
+    handle: '@BrightLabsUniversity',
+    url: 'https://brightlabs-official-website.vercel.app',
+    icon: 'Website',
+    description: 'VISIT THE OFFICIAL WEBSITE OF BRIGHTLABS UNIVERSITY'
+  },
+  {
     id: 'youtube',
     name: 'YouTube',
     handle: '@BrightLabsUniversity',
