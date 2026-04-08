@@ -1,5 +1,5 @@
 export const profile = {
-  name: 'BrightLabs University',
+  name: 'BrightLabs',
   tagline: 'We offer custom solutions to your business and personal project',
   categories: [
     'Web Development', 
@@ -10,5 +10,5 @@ export const profile = {
     'Digital Books',
     'Android Development'],
   footerText: 'all links lead to respected spaces',
-  updateHandle: `© ${new Date().getFullYear()} BrightLabs University. All rights reserved.`,
+  updateHandle: `© ${new Date().getFullYear()} BrightLabs. All rights reserved.`,
 };
