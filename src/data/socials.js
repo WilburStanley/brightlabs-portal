@@ -3,7 +3,7 @@ export const socials = [
     id: 'gumroad',
     name: 'Gumroad',
     handle: 'brightlabsuniversity',
-    url: 'https://brightlabsuniversity.gumroad.com',
+    url: 'https://brightlabs.gumroad.com',
     icon: 'Gumroad',
     description: 'Software Tools and Books'
   },
@@ -13,13 +13,13 @@ export const socials = [
     handle: '@BrightLabsUniversity',
     url: 'https://brightlabs-official-website.vercel.app',
     icon: 'Website',
-    description: 'VISIT THE OFFICIAL WEBSITE OF BRIGHTLABS UNIVERSITY'
+    description: 'VISIT THE OFFICIAL WEBSITE OF BRIGHTLABS'
   },
   {
     id: 'youtube',
     name: 'YouTube',
-    handle: '@BrightLabsUniversity',
-    url: 'https://www.youtube.com/@BrightLabsUniversity',
+    handle: '@BrightLabs-Community',
+    url: 'https://www.youtube.com/@BrightLabs-Community',
     icon: 'Youtube',
     description: 'DEEP DIVES AND DEMO VIDEOS'
   },
